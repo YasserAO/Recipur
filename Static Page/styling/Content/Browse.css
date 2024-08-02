@@ -1,0 +1,254 @@
+
+@import url(RecipeDetails/recipeDetails.css);
+@import url(RecipeDetails/nutritionsDetails.css);
+
+:root{
+    --ColorBorder:#009688;
+    --ColorSearch:#009688;
+    --ColorIngr:#F5FEC1;
+    --ColorTitle:#F8FBE5;
+}
+
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.info-de{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.info img{
+    display: block;
+    width: 30px;
+}
+
+
+form{
+    width: 100%;
+    margin:20px auto;
+}
+
+
+.searchBar{ 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+form input{
+    width: 60%;
+    border-radius: 10px;
+    padding-left: 20px;
+    max-width: 300px;
+    background-color: rgba(185, 250, 185, 0.466) ;
+    color: rgb(0, 90, 45);
+    height:40px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: var(--ft--normal);
+    box-shadow:inset 0 0 5px 1px rgba(0, 0, 0, 0.226);
+}
+
+form button {
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    border: none;
+    transition: 0.2ss;
+    cursor: pointer;
+
+}
+
+
+form button:active{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+.searchArea{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.outputField {  
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.212);
+    padding: 30px 10px 20px;
+    
+    background-color: rgb(222, 255, 238);
+    
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.recipeOptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.imgContainer{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10%;
+    overflow: hidden;
+    
+}
+
+.imgContainer img{
+    width: 100%;
+}
+
+.AddFav,.ShowDetails{
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.favContainer{
+    background-color: rgba(255, 12, 12, 0.466);
+    padding: 5px;
+    border-radius: 15px;
+}
+.favContainer,.detContainer {
+    max-width: 40px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.recipeOptions img{
+    width: 100%;
+}
+
+.recipeOptions p{
+    display: none;
+}
+
+.settings{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    border-top: 1px solid var(--ColorBorder);
+    border-bottom: 1px solid var(--ColorBorder);
+    padding: 5px 0;
+}
+
+
+
+
+/* Text Settings */
+
+
+.recipe h3{
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: var(--ft--bold);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: var(--ColorBorder);
+    color: white;
+
+    
+}
+
+
+.searchArea label {
+    font-size: 1.2rem;
+}
+
+/* Favorite icon*/
+.dark{
+    background-color: gray;
+}
+
+
+
+@media(min-width:400px){
+    .info{
+        display: none;
+    }
+    .recipeOptions p{
+        display: block;
+    }
+    .settings{
+        justify-content: start;
+    }
+    .imgContainer{
+        max-width: 120px;
+        max-height: 120px;
+    }
+    
+}
+
+@media(min-width:400px){
+    .outputField{
+        border-radius: 20px;
+    }
+}
+
+@media(min-width:600px){
+    .recipeOptions {
+        margin: 0 auto;
+        flex-direction: row;
+    }
+    .outputField {
+        padding: 30px 40px 20px;
+        
+    }
+}
+
+@media(min-width:768px){
+    .recipe h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50px;
+        
+    }
+    .recipe{
+        width: 100%;
+        max-width: 250px;
+    }
+    .outputField{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    .recipeOptions{
+        flex-direction: column;
+    }
+}
+
+@media(min-width:1200px){
+    .recipeOptions {
+       flex-direction: row;
+    }
+    .recipe{
+        max-width: 400px;
+    }
+}
+@media(min-width:1400){
+    .recipe{
+        max-width: 600px;
+    }
+}

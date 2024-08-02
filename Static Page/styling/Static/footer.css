@@ -1,0 +1,32 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-top: 20px;
+    height: 100px;
+    width: 100%;
+    color: var(--main-color);
+    background-color: var(--colors-Dark-light-green);
+}
+.footerList{
+   
+    height: fit-content;
+    margin: 0 auto 20px;
+    width: fit-content;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+footer a{
+    padding: 0 10px;
+    color: rgb(0, 136, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:active,footer a:hover{
+    color: rgb(255, 126, 126);
+}

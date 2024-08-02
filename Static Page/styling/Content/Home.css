@@ -1,0 +1,62 @@
+.features{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.features h1 {
+    font-size: 3.5rem;
+}
+
+.feature h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.feature p{
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.feature:not(:last-child) {margin-bottom:50px;}
+
+
+
+
+.StartNow{
+    margin: 0 auto 50px;
+    height: 80px;
+    width: 200px;
+    font-size: 1.5rem;
+    transition: 0.2s;
+}
+
+.StartNow:hover{
+    scale: 1.025;
+    color:  rgb(6, 61, 4) ;
+    background-color: white;
+    box-shadow:    5px 5px rgba(3, 3, 3, 0.911);
+}
+
+.LinksButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border:3px solid  var(--colors-Dark-light-green); */
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(6, 61, 4);
+    border: 2px solid;
+    box-shadow:    5px 5px rgba(3, 3, 3, 0.418);
+    
+
+    user-select: none;
+    cursor: pointer;
+
+}
+

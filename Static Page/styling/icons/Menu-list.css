@@ -1,0 +1,17 @@
+.icon-list{
+    position: absolute;
+    border: 1px solid white;
+    padding: 5px;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.icon-list span {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: white;
+}
+.icon-list span:not(:last-child){
+    margin-bottom: 5px;
+}

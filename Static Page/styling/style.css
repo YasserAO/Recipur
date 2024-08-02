@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+
+
+/* Icons Styling */
+@import url(icons/Menu-list.css);
+
+
+/* Header */
+@import url(Static/header.css);
+
+/* NavBar */
+@import url(Static/nav.css);
+
+/* Footer */
+@import url(Static/footer.css);
+
+/* Browse Page */
+@import url(Content/Browse.css);
+
+/* favorite page */
+@import url(Content/favorite.css);
+
+/* Home Page */
+@import url(Content/Home.css);
+
+:root{
+    --ft-Manrope:"Manrope", sans-serif;
+    --ft-GreatVibes:"Great Vibes", cursive;
+    --ft--Ebold:800;
+    --ft--bold:700;
+    --ft--normal:400;
+
+
+    /* Colors */
+    --colors-light-yellow : rgb(240, 226, 181);
+    --colors-Dark-green:rgb(21, 37, 23);
+    --colors-Dark-light-green:rgb(22, 46, 18);
+    --main-color: rgb(255, 255, 255);
+    /* --colors-Dark-green : rgb(19, 26, 15); */
+}
+
+
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ft-Manrope);
+    font-weight: var(--ft--normal);
+    -webkit-tap-highlight-color: transparent;
+}
+
+html{
+    height: 100%;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 200px;
+    background-color: var(--colors-light-yellow );
+    
+}
+
+
+.container {
+    width: 100%;
+    
+    margin: 0 auto;
+}
+
+
+
+main {
+    padding-top: 40px;
+    /* background-color: var(--main-color); */
+}
+main h1 {
+    text-align: center;
+    font-weight: var(--ft--Ebold);
+    font-family: var(--ft-GreatVibes);
+    margin-bottom: 10px;
+    color: var(--colors-Dark-light-green);
+}
+main .container > p {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    
+}
+
+main h2{
+    font-size: 1.5rem;
+    font-weight: var(--ft--bold);
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width:400px){
+    .container{
+        padding: 0 30px;
+    }
+}
+
+@media(min-width:768px){
+    .container{
+        max-width: 700px;
+    }
+}
+
+@media(min-width:1200px){
+    .container{
+        max-width: 1000px;
+    }
+}
+
+@media(min-width:1400px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

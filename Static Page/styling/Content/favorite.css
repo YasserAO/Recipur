@@ -1,0 +1,20 @@
+.loadfav{
+    margin: 0 auto 20px;
+    width: fit-content;
+}
+
+.loadfav button {
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    border: none;
+    transition: 0.2ss;
+    cursor: pointer;
+
+}
+
+
+.loadfav button:active{
+    background-color: black;
+    color: white;
+}

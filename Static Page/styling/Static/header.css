@@ -1,0 +1,30 @@
+header{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color:var(--colors-light-yellow);
+    color: var(--colors-Dark-green);
+    cursor: pointer;
+    user-select: none;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+header img{
+    width:8rem;
+    max-width: 10rem;
+}
+
+header h1{
+    font-family: var(--ft-GreatVibes);
+    font-size: 5rem;
+    font-weight: var(--ft--Ebold);
+    
+}
+header p {
+    font-weight: var(--ft--bold);
+}
