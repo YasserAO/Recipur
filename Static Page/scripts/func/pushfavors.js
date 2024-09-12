@@ -8,9 +8,9 @@ export default function pushfavors(data) {
   const outPutArea = document.querySelector("#favoriteField");
   outPutArea.innerHTML = "";
   data.forEach((element) => {
-    const recipeName = element.label;
-    const recipeImage = element.image;
-    const recipe_id = idExtractor(element.uri);
+    const recipeName = element.recipe.label;
+    const recipeImage = element.recipe.image;
+    const recipe_id = idExtractor(element.recipe.uri);
 
     const label = CreateRecipeLabel(recipeName, recipeImage);
     let favoriteList = favList();
@@ -19,7 +19,7 @@ export default function pushfavors(data) {
       if (favoriteList[i] == recipe_id) ifFav = true;
     }
 
-    favadd(label, ifFav);
+    favadd(label, ifFav, true);
     ShowDetailsFav(label);
     outPutArea.append(label);
   });

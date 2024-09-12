@@ -5,6 +5,7 @@ export function localfavList(data) {
   const favorite = localStorage.getItem(que);
   if (!favorite) localStorage.setItem(que, JSON.stringify([]));
   if (data) {
+    data = { recipe: data };
     let Data = JSON.parse(localStorage.getItem(que));
     Data.push(data);
     localStorage.setItem(que, JSON.stringify(Data));
@@ -15,6 +16,8 @@ export function localfavListDelete(data) {
   let extractedid = idExtractor(data.uri);
   const que = "localfavList";
   let list = JSON.parse(localStorage.getItem(que));
-  let localfavList = list.filter((id) => idExtractor(id.uri) !== extractedid);
+  let localfavList = list.filter(
+    (item) => idExtractor(item.recipe.uri) !== extractedid
+  );
   localStorage.setItem(que, JSON.stringify(localfavList));
 }
