@@ -1,4 +1,4 @@
-﻿# Preview : https://recipur.onrender.com  
+﻿# Preview : https://recipur.yasserao.dev
  
  # Recipur
 
