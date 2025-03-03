@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get("*", (req, res) => {
   res.render("./pages/index.ejs", {
-    pageTitle: "Not Found",
+    pageTitle: "Recipur 404",
     content: "notfound.ejs",
   });
 });
