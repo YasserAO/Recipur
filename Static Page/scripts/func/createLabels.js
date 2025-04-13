@@ -1,17 +1,25 @@
 import { SearchQue } from "../OnStart/SearchQue.js";
 
+const imgLoadingHandle = (event) => {
+  const imgContainer = event.target.parentNode.parentNode;
+  const activity = event.target.parentNode;
+  imgContainer.classList.remove("load-wraper");
+  activity.classList.remove("activity");
+  event.target.classList.add("loaded");
+  event.target.removeEventListener("load", imgLoadingHandle);
+};
 
+export default function CreateRecipeLabel(recipeName, recipeImg) {
+  const label = document.createElement("div");
 
-export default function CreateRecipeLabel(recipeName,recipeImg){
-
-    const label = document.createElement('div');
-
-    label.innerHTML=`
+  label.innerHTML = `
     <h3>${recipeName}</h3>
     
                 <div class="settings">
-                    <div class="imgContainer">
-                        <img src=${recipeImg} alt="RecipieImg">
+                    <div class="imgContainer load-wraper">
+                        <div class="activity">
+                        <img src=${recipeImg}   alt="RecipieImg">
+                        </div>
                     </div>
                     <div class="recipeOptions">
                         <div class="AddFav">
@@ -30,7 +38,9 @@ export default function CreateRecipeLabel(recipeName,recipeImg){
                     </div>
                 </div>
                 `;
-    label.classList.add('recipe');    
-    return label;
-}
+  label.classList.add("recipe");
+  const img = label.querySelector(".imgContainer img");
 
+  img.addEventListener("load", imgLoadingHandle);
+  return label;
+}
