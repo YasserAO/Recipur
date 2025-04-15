@@ -12,6 +12,11 @@ export function localfavList(data) {
   } else return JSON.parse(localStorage.getItem(que));
 }
 
+export function localfavListUpdate(data) {
+  const que = "localfavList";
+  localStorage.setItem(que, JSON.stringify(data));
+}
+
 export function localfavListDelete(data) {
   let extractedid = idExtractor(data.uri);
   const que = "localfavList";
