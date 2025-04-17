@@ -4,7 +4,7 @@ import { getURIS } from "../tools/getURIS.js";
 
 export const updateContent = async () => {
   const updater = "updater";
-  const maxAge = 60 * 2;
+  const maxAge = 3600;
   const updaterCheck = getcookie(updater);
 
   if (!updaterCheck) {
