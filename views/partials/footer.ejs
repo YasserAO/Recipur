@@ -1,9 +1,16 @@
 <div class="container">
-    <div class="footerList">
-        <a href="/home">Home</a>
-        <a href="/Browse">Browse</a>
-        <a href="/favorite">Favorite</a>
-        <a href="/About">About</a>
-    </div>
-    <p>&copy; 2024 YasserAO . This webpage is open-source and free to use.</p>
+  <div class="footerList">
+    <a href="/home">Home</a>
+    <a href="/Browse">Browse</a>
+    <a href="/favorite">Favorite</a>
+    <a href="/About">About</a>
+  </div>
+  <p>
+    &copy; 2024-<span id="year"></span> YasserAO . This webpage is open-source
+    and free to use.
+  </p>
+  <script>
+    const mydate = new Date().getFullYear();
+    document.getElementById("year").innerHTML = mydate;
+  </script>
 </div>
