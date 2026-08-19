@@ -1,4 +1,4 @@
-﻿# Preview : https://recipur.yasserao.dev
+﻿# Preview : https://recipur.vendra.cfd
  
  # Recipur
 
